@@ -23,4 +23,16 @@ public class PrinterTest {
         assertEquals(16, myPrinter.getNumSheets());
     }
 
+    @Test
+    public void willPrintIfHasEnoughPaper(){
+        myPrinter.print(10, 1);
+        assertEquals(10, myPrinter.getNumSheets());
+    }
+
+    @Test
+    public void willNotPrintIfDoesNotHaveEnoughPaper(){
+        myPrinter.print(20, 2);
+        assertEquals(20, myPrinter.getNumSheets());
+    }
+
 }
