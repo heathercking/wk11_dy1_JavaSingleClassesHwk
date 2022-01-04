@@ -45,5 +45,6 @@ public class PrinterTest {
         myPrinter.print(2, 2);
         assertEquals(46, myPrinter.getTonerVolume());
     }
+    
 
 }
