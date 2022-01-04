@@ -20,10 +20,14 @@ public class WaterBottleTest {
     }
 
     @Test
-    public void hasDrinkFunction(){
+    public void canDrinkAndReduceVolumeBy10(){
         myBottle.drink();
         assertEquals(90, myBottle.getVolume());
     }
 
-    
+    @Test
+    public void canEmptyBottleAndReduceVolumeTo0(){
+        myBottle.empty();
+        assertEquals(0, myBottle.getVolume());
+    }
 }
