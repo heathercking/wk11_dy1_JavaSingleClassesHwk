@@ -6,12 +6,10 @@ import static org.junit.Assert.assertEquals;
 public class WaterBottleTest {
 
     WaterBottle myBottle;
-//    Calculator myCalc;
 
     @Before
     public void before(){
         myBottle = new WaterBottle();
-//        myCalc = new Calculator();
     }
 
     @Test
