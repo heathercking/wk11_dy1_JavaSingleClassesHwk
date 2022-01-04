@@ -30,4 +30,10 @@ public class WaterBottleTest {
         myBottle.empty();
         assertEquals(0, myBottle.getVolume());
     }
+
+    @Test
+    public void canFillBottleBackToVolume100(){
+        myBottle.fill();
+        assertEquals(100, myBottle.getVolume());
+    }
 }
